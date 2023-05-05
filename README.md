@@ -5,3 +5,5 @@
  ![UI of Dice game](/Screenshot.jpg)
  -  The second game is of stone paper scissor which is basically a tossing game which probably many of you had played in your childhood.So basically the user task is to choose between stone/paper/scissor and the counterpart is chosen by the computer following which the winner is decided. But you know whats the most interesting part is?? Its actually the score board which will be recording your and computers number of wins. So you now dont have to remember the counts. Isn't that cool??
  ![UI of Stone game](/stonePaper/images/Screenshot.jpg)
+ -  The third game is of stone paper scissor which is basically a tossing game which probably many of you had played in your childhood.So basically the user task is to choose between stone/paper/scissor and the counterpart is chosen by the computer following which the winner is decided. But you know whats the most interesting part is?? Its actually the score board which will be recording your and computers number of wins. So you now dont have to remember the counts. Isn't that cool??
+ ![UI of Drum Kit](/DrumKit/images/Screenshot.jpg)
