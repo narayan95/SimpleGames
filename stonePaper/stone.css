@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Silkscreen&display=swap');
+
+body {
+    /* font-family: monospace; */
+    font-size: 20px;
+    text-align: center;
+    background: rgb(0, 184, 126);
+    color: rgb(255, 255, 255);
+    margin: 3em;
+    font-family: 'Silkscreen';
+  }
+  
+  strong {
+    text-decoration: underline;
+  }
+  .back{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  button {
+    background: rgb(86, 73, 73);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  button:active {
+    background: green;
+  }
+  
+  .scoreboard {
+    width: 14em;
+    margin: auto;
+    border: 1px solid lime;
+  }
+  .scoreboard h2 {
+    border-bottom: 1px solid lime;
+    margin: 0;
+    padding: 10px;
+  }
+  .scoreboard table {
+    margin: 10px auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .scoreboard th, .scoreboard td {
+    text-align: center;
+  }
+  .scoreboard td {
+    font-size: 3em;
+    padding: 0 20px;
+  }
+  
+  #status {
+    margin-top: 20px;
+  }
