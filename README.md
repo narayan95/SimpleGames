@@ -26,5 +26,5 @@
 
 -  The fifth game is the famous tic tac toe game which all of us have probably played in our schools on pen- paper. Here is the one digitally which you can play with some other player and the computer wont allow you to cheat now!!
 
- ![UI of tic tac toe game](/TicTacToe/Screenshot.jpg)
+ ![UI of tic tac toe game](/TicTacToe/Screenshot2.jpg)
 
