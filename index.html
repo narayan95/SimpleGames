@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Games</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7f9;
+      background-image: url('https://example.com/background-image.jpg'); /* Replace with your background image URL */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding-top: 80px; /* Add space for the fixed navbar */
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(37, 3, 255, 0.5);
+      color: #fff;
+      text-align: center;
+      padding: 8px 0;
+      z-index: 1000; /* Ensure the navbar stays on top */
+    }
+
+    #game-list {
+      list-style: none;
+      margin: 20px auto;
+      padding: 0;
+      max-width: 600px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .game-item {
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .game-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #007bff; /* Blue color for game names */
+      text-decoration: none; /* Remove underline from game name links */
+      display: flex;
+      justify-content: center;
+    }
+
+    .game-title:hover {
+      transform: scale(1.05); /* Add a hover animation */
+    }
+
+    .game-description {
+      font-size: 18px;
+      color: #000; /* Black color for game details */
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>List of Games</h1>
+  </header>
+
+  <ul id="game-list">
+    <!-- Games will be dynamically added here -->
+  </ul>
+
+  <script>
+    // List of 5 games with descriptions
+    const gamesList = [
+      {
+        title: 'DiceRoll',
+        description: 'DiceRoll is a simple dice rolling game. Click on the "Roll Dice" button to roll the dice and see what number you get!',
+      },
+      {
+        title: 'DrumKit',
+        description: 'DrumKit is a virtual drum set. Press the keys on your keyboard that correspond to the drum kit components, and enjoy making beats!',
+      },
+      {
+        title: 'SimonGame',
+        description: 'SimonGame is a memory-based game. Follow the pattern of colors and sounds that Simon shows you. Can you remember and repeat the sequence?',
+      },
+      {
+        title: 'TicTacToe',
+        description: 'TicTacToe is a classic two-player game. Take turns placing your X or O on the board, and the first player to get three in a row wins!',
+      },
+      {
+        title: 'StonePaper',
+        description: 'StonePaper is a variation of the classic Rock-Paper-Scissors game.',
+      },
+    ];
+
+    // Function to generate the game list
+    function generateGameList() {
+      const gameListElement = document.getElementById('game-list');
+
+      gamesList.forEach(game => {
+        const gameItem = document.createElement('li');
+        gameItem.classList.add('game-item');
+
+        const titleElement = document.createElement('div');
+        titleElement.classList.add('game-title');
+
+        // Create a link for the game title
+        const gameLink = document.createElement('a');
+        gameLink.href = `SimpleGames/${game.title}/index.html`;
+        gameLink.textContent = game.title;
+
+        titleElement.appendChild(gameLink);
+
+        const descriptionElement = document.createElement('div');
+        descriptionElement.classList.add('game-description');
+        descriptionElement.textContent = game.description;
+
+        gameItem.appendChild(titleElement);
+        gameItem.appendChild(descriptionElement);
+
+        gameListElement.appendChild(gameItem);
+      });
+    }
+
+    // Call the function to generate the game list
+    generateGameList();
+  </script>
+</body>
+</html>
