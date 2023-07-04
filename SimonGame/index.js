@@ -37,7 +37,7 @@ $(".btn").click(function () {
 
 });
 function playSound(name) {
-    var tap = new Audio("sounds/" + name);
+    var tap = new Audio("SimonGame/sounds/" + name);
     tap.play();
 
 }

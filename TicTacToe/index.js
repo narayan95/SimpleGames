@@ -1,6 +1,6 @@
 
-let music = new Audio("music.mp3");
-let turn = new Audio("ting.mp3");
+let music = new Audio("/TicTacToe/music.mp3");
+let turn = new Audio("/TicTacToe/ting.mp3");
 let currTurn="X";
 let isgameover = false;
 function changeTurn()
