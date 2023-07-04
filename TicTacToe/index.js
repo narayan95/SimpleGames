@@ -1,6 +1,6 @@
 
-let music = new Audio("/TicTacToe/music.mp3");
-let turn = new Audio("/TicTacToe/ting.mp3");
+let music = new Audio("https://narayan95.github.io/SimpleGames/TicTacToe/music.mp3");
+let turn = new Audio("https://narayan95.github.io/SimpleGames/TicTacToe/ting.mp3");
 let currTurn="X";
 let isgameover = false;
 function changeTurn()
